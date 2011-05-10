@@ -846,7 +846,6 @@ function log() {
             debug: function() {}, dir:   function() {}
         }
     }
-    
     if (typeof window.jQuery === 'undefined') {
         return;
     }
@@ -863,7 +862,8 @@ function log() {
             containerElem: '#container',
             i18n: {
                 OK: '发送成功',
-                FAIL: '发送失败'
+                FAIL: '发送失败',
+                SENDING: '图片发送中...'
             }
         },
 
@@ -882,14 +882,11 @@ function log() {
             var self = this,
                 o = this.options;
 
-            console.log(document.domain);
-            //window.document.domain = 'm.fanfou.com';
-
             if (typeof window.jQuery.fn.ajaxForm != 'undefined') {
                 $('#' + o.id).ajaxForm({
                     dataType: 'html',
                     beforeSubmit: function(a,f,o) {
-                        self.showMsg("图片发送中...");
+                        self.showMsg(o.i18n.SENDING);
                     },
                     success: function(data) {
                         window.location.reload();
