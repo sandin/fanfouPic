@@ -885,7 +885,7 @@ function log() {
             if (typeof window.jQuery.fn.ajaxForm != 'undefined') {
                 $('#' + o.id).ajaxForm({
                     dataType: 'html',
-                    beforeSubmit: function(a,f,o) {
+                    beforeSubmit: function() {
                         self.showMsg(o.i18n.SENDING);
                     },
                     success: function(data) {
