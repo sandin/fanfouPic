@@ -2,7 +2,7 @@
 
 "饭否图片上传" 按钮. 
 
-javascript:void((function(){var n=navigator.userAgent.toLowerCase();ie=n.indexOf('msie')!=-1?1:0;if(document.documentMode)ie=0;charset='';if(ie)charset=document.charset;src=ie&&charset=='utf-8'?'http://localhost/fanfou/fanfoupic.js':'http://localhost/fanfou/fanfoupic.js';element=document.createElement('script');element.setAttribute('src',src);document.body.appendChild(element);})())[Add FanfouPic]
+<a href="javascript:void((function(){var n=navigator.userAgent.toLowerCase();ie=n.indexOf('msie')!=-1?1:0;if(document.documentMode)ie=0;charset='';if(ie)charset=document.charset;src=ie&&charset=='utf-8'?'http://localhost/fanfou/fanfoupic.js':'http://localhost/fanfou/fanfoupic.js';element=document.createElement('script');element.setAttribute('src',src);document.body.appendChild(element);})())">Add FanfouPic</a>
 
 将链接保存为书签, 使用时点击书签按钮即可.
 
