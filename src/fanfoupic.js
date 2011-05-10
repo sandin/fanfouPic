@@ -846,9 +846,6 @@ function log() {
             debug: function() {}, dir:   function() {}
         }
     }
-    if (typeof window.jQuery === 'undefined') {
-        return;
-    }
 
     var FanfouPic = {
         options: {
@@ -907,7 +904,6 @@ function log() {
                 $('<div />').addClass(o.sysMsgClass)
                             .text(msg)
                             .appendTo($(o.containerElem));
-                console.log($(o.containerElem));
             }
         },
 
